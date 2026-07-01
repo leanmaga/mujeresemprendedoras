@@ -31,17 +31,17 @@ export default function Testimonios() {
   const t = testimonios[current];
 
   return (
-    <section id="testimonios" className="bg-[#1A0533] py-24">
+    <section id="testimonios" className="bg-[#E7D7B9] py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-16">
         <div className="flex items-end justify-between mb-16">
           <div>
-            <span className="text-[#FF2D78] text-xs font-bold tracking-widest uppercase">
+            <span className="text-[#7D5BA6] text-xs font-bold tracking-[0.28em] uppercase">
               Testimonios
             </span>
-            <h2 className="text-5xl md:text-6xl font-black text-white leading-tight mt-3">
+            <h2 className="font-display text-4xl md:text-5xl text-[#3B1D4F] leading-tight mt-3">
               Historias de
               <br />
-              <span className="text-[#FFE135]">Impacto</span>
+              <span className="text-[#C89B4D]">Impacto</span>
             </h2>
           </div>
           <div className="flex gap-3">
@@ -51,7 +51,7 @@ export default function Testimonios() {
                   (c) => (c - 1 + testimonios.length) % testimonios.length,
                 )
               }
-              className="w-12 h-12 rounded-full border border-white/20 hover:border-white/50 text-white flex items-center justify-center transition-colors"
+              className="w-12 h-12 rounded-full border border-[#3B1D4F]/20 hover:border-[#3B1D4F]/40 text-[#3B1D4F] flex items-center justify-center transition-colors"
             >
               <svg
                 className="w-5 h-5"
@@ -69,7 +69,7 @@ export default function Testimonios() {
             </button>
             <button
               onClick={() => setCurrent((c) => (c + 1) % testimonios.length)}
-              className="w-12 h-12 rounded-full bg-[#FF2D78] hover:bg-[#FF2D78]/80 text-white flex items-center justify-center transition-colors"
+              className="w-12 h-12 rounded-full bg-[#3B1D4F] hover:bg-[#7D5BA6] text-[#F8F7F4] flex items-center justify-center transition-colors"
             >
               <svg
                 className="w-5 h-5"
@@ -88,10 +88,9 @@ export default function Testimonios() {
           </div>
         </div>
 
-        {/* Testimonio grande */}
         <div className="grid md:grid-cols-[1fr_auto] gap-12 items-center">
           <div>
-            <p className="text-3xl md:text-4xl font-black text-white leading-tight mb-10">
+            <p className="text-3xl md:text-4xl font-black text-[#3B1D4F] leading-tight mb-10">
               {t.quote}
             </p>
             <div className="flex items-center gap-4">
@@ -103,13 +102,12 @@ export default function Testimonios() {
                 className="rounded-full object-cover"
               />
               <div>
-                <p className="font-bold text-white">{t.name}</p>
-                <p className="text-white/40 text-sm">{t.role}</p>
+                <p className="font-bold text-[#3B1D4F]">{t.name}</p>
+                <p className="text-[#3B1D4F]/60 text-sm">{t.role}</p>
               </div>
             </div>
           </div>
 
-          {/* Contador */}
           <div className="hidden md:flex flex-col items-center gap-2">
             {testimonios.map((_, i) => (
               <button
@@ -117,8 +115,8 @@ export default function Testimonios() {
                 onClick={() => setCurrent(i)}
                 className={`transition-all rounded-full ${
                   i === current
-                    ? "h-12 w-1.5 bg-[#FFE135]"
-                    : "h-3 w-1.5 bg-white/20"
+                    ? "h-12 w-1.5 bg-[#3B1D4F]"
+                    : "h-3 w-1.5 bg-[#3B1D4F]/20"
                 }`}
               />
             ))}

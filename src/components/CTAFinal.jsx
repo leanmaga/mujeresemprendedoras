@@ -1,12 +1,21 @@
+const socialLinks = [
+  { label: "YouTube", href: "https://www.youtube.com/@demujeramujerpodcast" },
+  { label: "TikTok", href: "https://www.tiktok.com/@demujeramujer.col" },
+  { label: "Threads", href: "https://www.threads.com/@demujeramujer.col" },
+  {
+    label: "Spotify",
+    href: "https://open.spotify.com/show/0OKo7E6ECwkG78t1srFYS4",
+  },
+];
+
 export default function CTAFinal() {
   return (
-    <section id="join" className="relative bg-[#FFE135] py-24 overflow-hidden">
-      {/* Texto wallpaper */}
-      <div className="absolute inset-0 flex flex-col justify-center gap-0 -rotate-6 scale-150 opacity-[0.06] select-none pointer-events-none">
+    <section id="join" className="relative bg-[#C89B4D] py-24 overflow-hidden">
+      <div className="absolute inset-0 flex flex-col justify-center gap-0 -rotate-6 scale-150 opacity-[0.08] select-none pointer-events-none">
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
-            className="text-[#1A0533] text-[100px] font-black whitespace-nowrap leading-none"
+            className="text-[#3B1D4F] text-[100px] font-black whitespace-nowrap leading-none"
           >
             CRECEMOS&nbsp;&nbsp;CRECEMOS&nbsp;&nbsp;CRECEMOS
           </div>
@@ -14,43 +23,63 @@ export default function CTAFinal() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <p className="text-[#1A0533]/50 text-xs font-bold tracking-widest uppercase mb-6">
-          CTA Final
+        <p className="text-[#3B1D4F]/60 text-xs font-bold tracking-[0.28em] uppercase mb-6">
+          Unete al canal de WhatsApp
         </p>
-        <h2 className="text-6xl md:text-8xl font-black text-[#1A0533] leading-[0.9] tracking-tighter mb-8">
-          Cuando una
+        <h2 className="font-display text-5xl md:text-7xl text-[#3B1D4F] leading-[0.95] tracking-[0.16em] mb-8">
+          Bienvenida a
           <br />
-          mujer crece,
+          Mujeres de Impacto
           <br />
-          <span className="text-[#FF2D78]">
-            CRECEMOS
-            <br />
-            TODAS.
-          </span>
+          <span className="text-[#7D5BA6]">Emprenden</span>
         </h2>
-        <p className="text-[#1A0533]/60 text-lg mb-12 max-w-md mx-auto">
-          Únete a nuestra comunidad y comienza a transformar tu sueño en un
-          negocio real.
+        <p className="text-[#3B1D4F]/70 text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
+          Una comunidad creada para conectar, visibilizar e impulsar negocios
+          liderados por mujeres. Aquí encontrarás networking, promoción de tu
+          emprendimiento, alianzas, apoyo entre emprendedoras y capacitaciones
+          para crecer.
         </p>
-        <a
-          href="#"
-          className="inline-flex items-center gap-3 bg-[#1A0533] hover:bg-[#2D0A5E] text-white font-black text-sm uppercase tracking-widest px-10 py-5 rounded-full transition-all hover:scale-105 shadow-2xl"
-        >
-          Unirme a la Comunidad
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        <p className="text-[#3B1D4F]/70 text-base mb-10 max-w-2xl mx-auto leading-relaxed">
+          Beneficio exclusivo: las integrantes podrán participar en talleres
+          gratuitos de la Fundación De Mujer a Mujer sobre gestión de emociones,
+          manejo del estrés, violencia basada en género, círculos de apoyo y
+          liderazgo.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4 mb-10">
+          <a
+            href="https://tr.ee/LBGiCoDmjR"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-3 bg-[#3B1D4F] hover:bg-[#7D5BA6] text-[#F8F7F4] font-black text-sm uppercase tracking-[0.22em] px-10 py-5 rounded-full transition-all hover:scale-105 shadow-2xl"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2.5}
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </a>
+            Unirme al canal de WhatsApp
+          </a>
+          <a
+            href="https://linktr.ee/dmujeramujer8?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcASjma5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAac2PVczHXFsGnvN02s6no8SJvCIsmb_HFVECyeqs084wVkLAaYjmKBoVzkdNQ_aem_cxxH1xve8oHTx7LzK-cMmQ"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-3 border border-[#3B1D4F]/30 bg-[#F8F7F4]/70 hover:bg-[#F8F7F4] text-[#3B1D4F] font-black text-sm uppercase tracking-[0.22em] px-10 py-5 rounded-full transition-all hover:scale-105"
+          >
+            Ver redes y links
+          </a>
+        </div>
+        <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
+          {socialLinks.map((link, index) => (
+            <div key={link.label} className="flex items-center">
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-bold uppercase tracking-[0.2em] text-[#3B1D4F] hover:text-[#7D5BA6] transition-colors"
+              >
+                {link.label}
+              </a>
+              {index < socialLinks.length - 1 && (
+                <span className="mx-3 md:mx-4 text-[#3B1D4F]/50">/</span>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

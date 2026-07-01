@@ -1,20 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #040305;
-  --surface: rgba(255, 255, 255, 0.04);
-  --text: #f8f8ff;
-  --muted: #d9d6ff;
-  --accent: #c084fc;
-  --accent-strong: #8b5cf6;
-  --border: rgba(255, 255, 255, 0.12);
+  --bg: #f8f7f4;
+  --surface: #e7d7b9;
+  --surface-strong: #3b1d4f;
+  --text: #3b1d4f;
+  --muted: #7d5ba6;
+  --accent: #c89b4d;
+  --accent-soft: #b89acd;
+  --accent-strong: #7d5ba6;
+  --border: rgba(59, 29, 79, 0.16);
 }
 
 @theme inline {
   --color-background: var(--bg);
   --color-foreground: var(--text);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-montserrat);
+  --font-mono: monospace;
 }
 
 html {
@@ -25,10 +27,14 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at top, rgba(139, 92, 246, 0.14), transparent 32%),
-    linear-gradient(180deg, #040305 0%, #07070f 48%, #040305 100%);
+    radial-gradient(
+      circle at top left,
+      rgba(184, 154, 205, 0.35),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #f8f7f4 0%, #f5efe3 45%, #e7d7b9 100%);
   color: var(--text);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -39,13 +45,13 @@ body::before {
   background:
     radial-gradient(
       circle at top right,
-      rgba(166, 85, 255, 0.08),
-      transparent 35%
+      rgba(124, 91, 166, 0.12),
+      transparent 32%
     ),
     radial-gradient(
       circle at bottom left,
-      rgba(255, 255, 255, 0.04),
-      transparent 30%
+      rgba(200, 155, 77, 0.14),
+      transparent 28%
     );
   pointer-events: none;
   z-index: -1;
@@ -72,7 +78,7 @@ select {
 }
 
 .hero-title {
-  text-shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 20px 80px rgba(59, 29, 79, 0.18);
 }
 
 .label {
@@ -81,6 +87,16 @@ select {
 
 .text-accent {
   color: var(--accent-strong);
+}
+
+.font-display {
+  font-family: var(--font-cinzel), Georgia, serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.font-body {
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
 }
 
 .profile-badge .avatar,
@@ -115,7 +131,11 @@ select {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(4, 3, 5, 0.92), rgba(4, 3, 5, 0.87));
+  background: linear-gradient(
+    180deg,
+    rgba(248, 247, 244, 0.95),
+    rgba(231, 215, 185, 0.92)
+  );
   pointer-events: none;
 }
 

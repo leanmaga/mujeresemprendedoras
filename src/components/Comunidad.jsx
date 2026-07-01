@@ -1,50 +1,70 @@
+import { FiAward, FiBook, FiHeart, FiUsers, FiZap } from "react-icons/fi";
+
 const features = [
-  { icon: "🔗", label: "Networking", sub: "Conexiones reales" },
-  { icon: "📢", label: "Promoción", sub: "Visibilidad digital" },
-  { icon: "🎓", label: "Capacitación", sub: "Talleres gratuitos" },
-  { icon: "🤝", label: "Alianzas", sub: "Colaboración" },
-  { icon: "💜", label: "Comunidad", sub: "Apoyo mutuo" },
+  {
+    icon: <FiAward size={24} />,
+    label: "Mentoría",
+    sub: "Conecta con expertas en tu industria y recibe orientación personalizada.",
+  },
+  {
+    icon: <FiBook size={24} />,
+    label: "Promoción",
+    sub: "Visibilidad digital",
+  },
+  {
+    icon: <FiZap size={24} />,
+    label: "Capacitación",
+    sub: "Talleres gratuitos",
+  },
+  {
+    icon: <FiUsers size={24} />,
+    label: "Alianzas",
+    sub: "Colaboración",
+  },
+  {
+    icon: <FiHeart size={24} />,
+    label: "Comunidad",
+    sub: "Apoyo mutuo",
+  },
 ];
 
 export default function Comunidad() {
   return (
-    <section id="comunidad" className="bg-[#0D0020] py-24 overflow-hidden">
+    <section id="comunidad" className="bg-[#3B1D4F] py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-16">
-        {/* Header asimétrico */}
         <div className="grid md:grid-cols-2 gap-12 items-end mb-20">
           <div>
-            <span className="text-[#FF2D78] text-xs font-bold tracking-widest uppercase">
+            <span className="text-[#C89B4D] text-xs font-bold tracking-[0.28em] uppercase">
               Comunidad
             </span>
-            <h2 className="text-5xl md:text-6xl font-black text-white leading-tight mt-3">
+            <h2 className="font-display text-4xl md:text-5xl text-[#F8F7F4] leading-tight mt-3">
               Somos
               <br />
-              <span className="text-[#FFE135]">Mujeres</span> de
+              <span className="text-[#B89ACD]">Mujeres</span> de
               <br />
               Impacto
             </h2>
           </div>
           <div>
-            <p className="text-white/50 text-lg leading-relaxed">
+            <p className="text-[#F8F7F4]/70 text-lg leading-relaxed">
               Nuestra misión es acompañar a mujeres emprendedoras, impulsarlas
               con herramientas reales y ayudarlas a crecer de manera sostenible.
             </p>
           </div>
         </div>
 
-        {/* Feature grid dramático */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
           {features.map((f, i) => (
             <div
               key={i}
-              className={`group relative p-6 rounded-2xl border border-white/10 hover:border-[#FF2D78]/50 transition-all cursor-pointer hover:-translate-y-1 ${
-                i === 2 ? "bg-[#FF2D78]/10" : "bg-white/5"
+              className={`group relative p-6 rounded-2xl border border-[#F8F7F4]/10 hover:border-[#C89B4D]/60 transition-all cursor-pointer hover:-translate-y-1 ${
+                i === 2 ? "bg-[#C89B4D]/10" : "bg-[#F8F7F4]/10"
               }`}
             >
-              <div className="text-3xl mb-4">{f.icon}</div>
-              <p className="font-black text-white text-sm">{f.label}</p>
-              <p className="text-white/40 text-xs mt-1">{f.sub}</p>
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#FFE135] scale-x-0 group-hover:scale-x-100 transition-transform rounded-b-2xl" />
+              <div className="mb-4 text-[#B89ACD]">{f.icon}</div>
+              <p className="font-black text-[#F8F7F4] text-sm">{f.label}</p>
+              <p className="text-[#F8F7F4]/60 text-xs mt-1">{f.sub}</p>
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C89B4D] scale-x-0 group-hover:scale-x-100 transition-transform rounded-b-2xl" />
             </div>
           ))}
         </div>
