@@ -60,7 +60,7 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="font-display text-5xl md:text-7xl text-[#3B1D4F] leading-[0.95] tracking-[0.12em] mb-6">
+          <h1 className="font-display text-3xl md:text-7xl text-[#3B1D4F] leading-[0.95] tracking-[0.12em] mb-6">
             IMPULSA
             <span className="text-[#C89B4D]">MOS</span>
             <br />

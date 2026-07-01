@@ -10,6 +10,8 @@
   --accent-soft: #b89acd;
   --accent-strong: #7d5ba6;
   --border: rgba(59, 29, 79, 0.16);
+  --font-cinzel: "Cinzel", Georgia, serif;
+  --font-montserrat: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 @theme inline {
@@ -26,6 +28,7 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
+  padding: 0;
   background:
     radial-gradient(
       circle at top left,
@@ -34,7 +37,7 @@ body {
     ),
     linear-gradient(135deg, #f8f7f4 0%, #f5efe3 45%, #e7d7b9 100%);
   color: var(--text);
-  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat);
   text-rendering: optimizeLegibility;
 }
 
@@ -90,9 +93,10 @@ select {
 }
 
 .font-display {
-  font-family: var(--font-cinzel), Georgia, serif;
+  font-family: var(--font-cinzel);
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 
 .font-body {

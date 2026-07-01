@@ -26,7 +26,7 @@ export default function CTAFinal() {
         <p className="text-[#3B1D4F]/60 text-xs font-bold tracking-[0.28em] uppercase mb-6">
           Unete al canal de WhatsApp
         </p>
-        <h2 className="font-display text-5xl md:text-7xl text-[#3B1D4F] leading-[0.95] tracking-[0.16em] mb-8">
+        <h2 className="font-display text-3xl md:text-7xl text-[#3B1D4F] leading-[0.95] tracking-[0.16em] mb-8">
           Bienvenida a
           <br />
           Mujeres de Impacto

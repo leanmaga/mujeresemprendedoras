@@ -38,7 +38,7 @@ export default function Testimonios() {
             <span className="text-[#7D5BA6] text-xs font-bold tracking-[0.28em] uppercase">
               Testimonios
             </span>
-            <h2 className="font-display text-4xl md:text-5xl text-[#3B1D4F] leading-tight mt-3">
+            <h2 className="font-display text-2xl md:text-5xl text-[#3B1D4F] leading-tight mt-3">
               Historias de
               <br />
               <span className="text-[#C89B4D]">Impacto</span>

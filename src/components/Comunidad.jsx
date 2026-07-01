@@ -37,7 +37,7 @@ export default function Comunidad() {
             <span className="text-[#C89B4D] text-xs font-bold tracking-[0.28em] uppercase">
               Comunidad
             </span>
-            <h2 className="font-display text-4xl md:text-5xl text-[#F8F7F4] leading-tight mt-3">
+            <h2 className="font-display text-2xl md:text-5xl text-[#F8F7F4] leading-tight mt-3">
               Somos
               <br />
               <span className="text-[#B89ACD]">Mujeres</span> de

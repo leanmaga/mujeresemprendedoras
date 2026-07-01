@@ -44,7 +44,7 @@ export default function Beneficios() {
           <span className="text-[#7D5BA6] text-xs font-bold tracking-[0.28em] uppercase">
             Beneficios
           </span>
-          <h2 className="font-display text-4xl md:text-5xl text-[#3B1D4F] leading-tight mt-3">
+          <h2 className="font-display text-2xl md:text-5xl text-[#3B1D4F] leading-tight mt-3">
             Haz Crecer Tu
             <br />
             <span className="text-[#C89B4D]">Emprendimiento</span>

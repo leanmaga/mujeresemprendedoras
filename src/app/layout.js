@@ -5,12 +5,14 @@ const cinzel = Cinzel({
   subsets: ["latin"],
   variable: "--font-cinzel",
   weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
   weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata = {
