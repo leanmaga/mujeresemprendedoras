@@ -37,21 +37,21 @@ function AnimatedNumber({ target, prefix }) {
 export default function Hero() {
   return (
     <section className="relative bg-[#E7D7B9] overflow-hidden min-h-screen flex items-center">
-      <div className="absolute inset-0 flex flex-col justify-center gap-0 -rotate-12 scale-150 opacity-[0.06] select-none pointer-events-none">
+      <div className="absolute inset-0 flex flex-col justify-center gap-0 -rotate-12 sm:scale-150 opacity-[0.06] select-none pointer-events-none">
         {[...Array(8)].map((_, i) => (
           <div
             key={i}
-            className="text-[#3B1D4F] text-[120px] font-black whitespace-nowrap leading-none tracking-tighter"
+            className="text-[#3B1D4F] text-[60px] sm:text-[120px] font-black whitespace-nowrap leading-none tracking-tighter"
           >
             MUJERES&nbsp;&nbsp;MUJERES&nbsp;&nbsp;MUJERES&nbsp;&nbsp;MUJERES
           </div>
         ))}
       </div>
 
-      <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] rounded-full bg-[#B89ACD] opacity-30 blur-[120px]" />
-      <div className="absolute bottom-[-50px] left-[20%] w-[400px] h-[400px] rounded-full bg-[#C89B4D] opacity-20 blur-[100px]" />
+      <div className="absolute top-[-60px] right-[-60px] w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] rounded-full bg-[#B89ACD] opacity-30 blur-[80px] sm:blur-[100px] md:blur-[120px]" />
+      <div className="absolute bottom-[-30px] left-[10%] w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] rounded-full bg-[#C89B4D] opacity-20 blur-[60px] sm:blur-[80px] md:blur-[100px]" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 py-24 grid md:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-16 py-12 sm:py-16 md:py-24 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div>
           <div className="inline-flex items-center gap-2 bg-[#3B1D4F]/10 border border-[#3B1D4F]/20 rounded-full px-4 py-1.5 mb-8">
             <div className="w-2 h-2 rounded-full bg-[#C89B4D] animate-pulse" />
@@ -60,14 +60,14 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-7xl text-[#3B1D4F] leading-[0.95] tracking-[0.12em] mb-6">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl text-[#3B1D4F] leading-[0.95] tracking-[0.12em] mb-4 md:mb-6">
             IMPULSA
             <span className="text-[#C89B4D]">MOS</span>
             <br />
             <span className="text-[#7D5BA6]">MUJERES</span>
           </h1>
 
-          <p className="font-body text-[#3B1D4F]/75 text-lg leading-relaxed mb-10 max-w-sm">
+          <p className="font-body text-[#3B1D4F]/75 text-sm sm:text-base md:text-lg leading-relaxed mb-6 md:mb-10 max-w-sm">
             que transforman sus sueños en negocios reales. Una comunidad que
             vibra contigo.
           </p>

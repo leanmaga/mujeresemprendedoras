@@ -30,14 +30,17 @@ const features = [
 
 export default function Comunidad() {
   return (
-    <section id="comunidad" className="bg-[#3B1D4F] py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-16">
-        <div className="grid md:grid-cols-2 gap-12 items-end mb-20">
+    <section
+      id="comunidad"
+      className="bg-[#3B1D4F] py-12 sm:py-16 md:py-24 overflow-hidden"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-16">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-end mb-12 md:mb-20">
           <div>
             <span className="text-[#C89B4D] text-xs font-bold tracking-[0.28em] uppercase">
               Comunidad
             </span>
-            <h2 className="font-display text-2xl md:text-5xl text-[#F8F7F4] leading-tight mt-3">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-[#F8F7F4] leading-tight mt-2 md:mt-3">
               Somos
               <br />
               <span className="text-[#B89ACD]">Mujeres</span> de
@@ -46,7 +49,7 @@ export default function Comunidad() {
             </h2>
           </div>
           <div>
-            <p className="text-[#F8F7F4]/70 text-lg leading-relaxed">
+            <p className="text-[#F8F7F4]/70 text-sm sm:text-base md:text-lg leading-relaxed">
               Nuestra misión es acompañar a mujeres emprendedoras, impulsarlas
               con herramientas reales y ayudarlas a crecer de manera sostenible.
             </p>

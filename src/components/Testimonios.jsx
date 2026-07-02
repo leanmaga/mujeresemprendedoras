@@ -31,14 +31,14 @@ export default function Testimonios() {
   const t = testimonios[current];
 
   return (
-    <section id="testimonios" className="bg-[#E7D7B9] py-24">
-      <div className="max-w-7xl mx-auto px-6 md:px-16">
-        <div className="flex items-end justify-between mb-16">
+    <section id="testimonios" className="bg-[#E7D7B9] py-12 sm:py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-16">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-0 mb-8 md:mb-16">
           <div>
             <span className="text-[#7D5BA6] text-xs font-bold tracking-[0.28em] uppercase">
               Testimonios
             </span>
-            <h2 className="font-display text-2xl md:text-5xl text-[#3B1D4F] leading-tight mt-3">
+            <h2 className="font-display text-3xl md:text-5xl text-[#3B1D4F] leading-tight mt-3">
               Historias de
               <br />
               <span className="text-[#C89B4D]">Impacto</span>
@@ -88,9 +88,9 @@ export default function Testimonios() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-[1fr_auto] gap-12 items-center">
+        <div className="grid md:grid-cols-[1fr_auto] gap-6 md:gap-12 items-center">
           <div>
-            <p className="text-3xl md:text-4xl font-black text-[#3B1D4F] leading-tight mb-10">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-black text-[#3B1D4F] leading-tight mb-6 md:mb-10">
               {t.quote}
             </p>
             <div className="flex items-center gap-4">

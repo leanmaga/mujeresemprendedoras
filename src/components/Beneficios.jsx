@@ -38,13 +38,13 @@ const beneficios = [
 
 export default function Beneficios() {
   return (
-    <section id="beneficios" className="bg-[#F8F7F4] py-24">
-      <div className="max-w-7xl mx-auto px-6 md:px-16">
-        <div className="mb-16">
+    <section id="beneficios" className="bg-[#F8F7F4] py-12 sm:py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-16">
+        <div className="mb-8 md:mb-16">
           <span className="text-[#7D5BA6] text-xs font-bold tracking-[0.28em] uppercase">
             Beneficios
           </span>
-          <h2 className="font-display text-2xl md:text-5xl text-[#3B1D4F] leading-tight mt-3">
+          <h2 className="font-display text-2xl sm:text-3xl md:text-5xl text-[#3B1D4F] leading-tight mt-2 md:mt-3">
             Haz Crecer Tu
             <br />
             <span className="text-[#C89B4D]">Emprendimiento</span>
@@ -55,13 +55,13 @@ export default function Beneficios() {
           {beneficios.map((b, i) => (
             <div
               key={i}
-              className="group flex items-center justify-between py-8 border-t border-[#3B1D4F]/10 hover:border-[#3B1D4F]/25 transition-all cursor-pointer"
+              className="group flex flex-col sm:flex-row sm:items-center sm:justify-between py-4 sm:py-6 md:py-8 border-t border-[#3B1D4F]/10 hover:border-[#3B1D4F]/25 transition-all cursor-pointer"
             >
-              <div className="flex items-center gap-8">
+              <div className="flex items-center gap-3 sm:gap-4 md:gap-8">
                 <span className={`text-xs font-bold ${b.accent} w-8`}>
                   {b.num}
                 </span>
-                <h3 className="text-2xl md:text-4xl font-black text-[#3B1D4F] group-hover:translate-x-2 transition-transform">
+                <h3 className="text-lg sm:text-2xl md:text-4xl font-black text-[#3B1D4F] group-hover:translate-x-2 transition-transform">
                   {b.title}
                 </h3>
               </div>

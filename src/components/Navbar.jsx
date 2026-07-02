@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="w-full py-4 px-6 md:px-16 flex items-center justify-between bg-[#F8F7F4]/90 backdrop-blur-md sticky top-0 z-50 border-b border-[#3B1D4F]/10">
+    <nav className="w-full py-3 px-4 sm:px-6 md:px-16 flex items-center justify-between bg-[#F8F7F4]/90 backdrop-blur-md sticky top-0 z-50 border-b border-[#3B1D4F]/10">
       <div className="flex items-center gap-3">
         <div className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden">
           <Image
@@ -13,7 +13,7 @@ export default function Navbar() {
             className="object-contain"
           />
         </div>
-        <span className="font-black text-[#3B1D4F] text-sm leading-tight">
+        <span className="font-black text-[#3B1D4F] text-xs sm:text-sm leading-tight">
           Mujeres de
           <br />
           <span className="text-[#7D5BA6]">Impacto</span> Emprenden

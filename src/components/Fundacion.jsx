@@ -2,9 +2,12 @@ import Image from "next/image";
 
 export default function Fundacion() {
   return (
-    <section id="fundacion" className="bg-[#F8F7F4] py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-16">
-        <div className="grid md:grid-cols-2 gap-20 items-center">
+    <section
+      id="fundacion"
+      className="bg-[#F8F7F4] py-12 sm:py-16 md:py-24 overflow-hidden"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-16">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-20 items-center">
           <div className="relative order-2 md:order-1">
             <div className="relative rounded-3xl overflow-hidden aspect-square">
               <Image
@@ -31,12 +34,12 @@ export default function Fundacion() {
             <span className="text-[#7D5BA6] text-xs font-bold tracking-[0.28em] uppercase">
               Fundación
             </span>
-            <h2 className="font-display text-2xl md:text-5xl text-[#3B1D4F] leading-tight mt-3 mb-8">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-5xl text-[#3B1D4F] leading-tight mt-2 md:mt-3 mb-4 md:mb-8">
               DE MUJER
               <br />
               <span className="text-[#C89B4D]">A MUJER</span>
             </h2>
-            <p className="text-[#3B1D4F]/70 text-lg leading-relaxed mb-10">
+            <p className="text-[#3B1D4F]/70 text-sm sm:text-base md:text-lg leading-relaxed mb-6 md:mb-10">
               Apoyo emocional entre mujeres que entienden tus desafíos.
               Ofrecemos círculos de contención, gestión del estrés y crecimiento
               real.

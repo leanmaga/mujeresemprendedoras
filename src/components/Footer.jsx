@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="bg-[#3B1D4F] py-12 border-t border-[#F8F7F4]/10">
       <div className="max-w-7xl mx-auto px-6 md:px-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-[#C89B4D] flex items-center justify-center overflow-hidden">
+          <div className="flex items-center justify-center">
             <Image
-              src="/logopng.png"
+              src="/logowhite.png"
               alt="Logo Mujeres de Impacto Emprenden"
               width={36}
               height={36}
@@ -69,9 +69,24 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-16 mt-8 pt-6 border-t border-[#F8F7F4]/10 text-[#F8F7F4]/30 text-xs">
-        © {new Date().getFullYear()} Mujeres de Impacto Emprenden. Todos los
-        derechos reservados.
+      <div className="max-w-7xl mx-auto px-6 md:px-16 mt-8 pt-6 border-t border-[#F8F7F4]/10">
+        <div className="flex flex-col gap-3 text-[#F8F7F4]/30 text-xs">
+          <p>
+            © {new Date().getFullYear()} Mujeres de Impacto Emprenden. Todos los
+            derechos reservados.
+          </p>
+          <p>
+            Desarrollado por{" "}
+            <a
+              href="https://patagoniascript.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#C89B4D] hover:text-[#B89ACD] transition-colors font-semibold"
+            >
+              PatagoniaScript
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
